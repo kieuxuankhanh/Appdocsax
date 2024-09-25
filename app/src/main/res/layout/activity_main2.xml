@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đề xuất"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="164dp">
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    app:srcCompat="@drawable/bank" />
+                <ImageView
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    app:srcCompat="@drawable/search" />
+
+                <Button
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/button"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:text="K"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/button1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+       <androidx.viewpager.widget.ViewPager
+           android:layout_marginTop="25dp"
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:id="@+id/ViewPager"
+           />
+        <me.relex.circleindicator.CircleIndicator
+            app:ci_drawable="@drawable/bg_indicator"
+            android:id="@+id/circle_indicator"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Truyen moi"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+            <GridView
+                android:id="@+id/gdvdstruyen"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:numColumns="3">
+            </GridView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dam my"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+            <GridView
+                android:id="@+id/gdv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="1" />
+            <GridView
+                android:layout_marginTop="15dp"
+                android:id="@+id/gdv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="3"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Het truyen"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+</ScrollView>
