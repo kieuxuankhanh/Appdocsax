@@ -21,19 +21,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="534dp"
         android:layout_marginTop="0dp"
         android:gravity="start"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Đăng nhập"
-            android:textSize="40dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
+            android:text="Đăng nhập"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -103,74 +104,98 @@
             android:orientation="horizontal">
 
             <Button
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:id="@+id/btnlog"
                 android:layout_width="310dp"
                 android:layout_height="50dp"
+                android:background="@drawable/button1"
                 android:gravity="center"
-                android:text="Đăng Nhập"
-                android:background="@drawable/button1"/>
-<!--            <Button-->
-<!--                android:id="@+id/btnsign"-->
-<!--                android:layout_width="130dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="160dp"-->
-<!--                android:gravity="center"-->
-<!--                android:text="Đăng ký" />-->
+                android:textColor="#F0AC49"
+                android:text="Đăng Nhập" />
         </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Hoặc đăng nhập với"/>
+            android:gravity="center"
+            android:text="Hoặc đăng nhập với"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-
+            <Button
+                android:id="@+id/btngg"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gg_logo"/>
+            <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btnfb"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/fb_logo"/>
+            <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btngit"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/git_logo"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:orientation="vertical"
-            android:gravity="bottom">
+            android:layout_marginTop="80dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
+
                 <TextView
-                    android:textSize="15dp"
-                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Bạn chưa có tài khoản? "
-                    />
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
                 <TextView
                     android:id="@+id/btnsign"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đăng ký ngay"
                     android:clickable="true"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:text="Đăng ký ngay" />
             </LinearLayout>
+
             <TextView
-                android:textSize="15dp"
-                android:textColor="@color/white"
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Copy right by WISDOM COMPANY" />
+                android:gravity="center"
+                android:text="Copy right by WISDOM COMPANY"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
